@@ -28,7 +28,7 @@ This lab will help you apply Python **data structures** to solve real-world prob
 3. Clone the forked repository to your local machine using:
    ```sh
    git clone <repo-url>
-   cd student-data-management-lab
+   cd course-7-module-1-python-data-structures-lab
    ```
 
 ### Install Dependencies
