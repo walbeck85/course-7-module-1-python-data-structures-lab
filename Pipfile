@@ -1,0 +1,15 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[dev-packages]
+pytest = "*"       # Testing framework for unit tests
+black = "*"        # Code formatter for consistent styling
+flake8 = "*"       # Linter for enforcing Python best practices
+
+[packages]
+# Add any runtime dependencies here if needed
+
+[requires]
+python_version = "3.10"
