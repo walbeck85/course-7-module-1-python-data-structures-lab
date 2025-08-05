@@ -92,6 +92,9 @@ This structured approach ensures an **efficient, maintainable, and scalable** st
 
 #### Step 1: Define Student Records using Lists and Tuples
 
+In `student_data.py`, define a list of students as tuples. You can use the example below,
+or make up your own student data.
+
 ```python
 # List of students stored as tuples (ID, Name, Major)
 students = [
@@ -101,82 +104,56 @@ students = [
     (104, "David Wilson", "Computer Science"),
     (105, "Eve Lewis", "Mathematics"),
 ]
-
-def display_students(student_list):
-    """Display student records"""
-    print("\nStudent Records:")
-    for sid, name, major in student_list:
-        print(f"ID: {sid} | Name: {name} | Major: {major}")
-
-display_students(students)
 ```
 
 #### Step 2: Filtering Students Using List Comprehensions
 
-```python
-def filter_students_by_major(student_list, major):
-    """Filter students by major using a list comprehension"""
-    filtered = [student for student in student_list if student[2] == major]
-    
-    if filtered:
-        print(f"\nStudents majoring in {major}:")
-        display_students(filtered)
-    else:
-        print(f"\nNo students found in {major}.")
+In `filter.py`, edit the `filter_students_by_major` function to return a filtered list
+of students given a major using a list comprehension.
 
-filter_students_by_major(students, "Computer Science")
+#### Step 3: Displaying Student Data
+
+In `data_processing.py`, edit the `format_student_data` function to return a string for a given student formatted like:
+```python
+"ID: 10 | Name: Louis Medina | Major: Computer Science"
 ```
 
-#### Step 3: Processing Large Student Datasets Using a Generator Expression
+#### Step 4: Displaying All Students' Data
 
-```python
-def student_generator(student_list, major):
-    """Generate student records lazily for memory efficiency"""
-    return (student for student in student_list if student[2] == major)
-
-# Creating a generator for Mathematics students
-math_students = student_generator(students, "Mathematics")
-
-# Retrieving student records lazily
-print(next(math_students))  # Output: (102, "Bob Smith", "Mathematics")
-print(next(math_students))  # Output: (105, "Eve Lewis", "Mathematics")
-```
-
-#### Step 4: Managing Student Data Using Dictionaries
-
-```python
-# Dictionary storing student data with ID as key
-student_dict = {
-    101: {"name": "Alice Johnson", "major": "Computer Science", "courses": {"CS101", "CS102"}},
-    102: {"name": "Bob Smith", "major": "Mathematics", "courses": {"MATH101", "MATH102"}},
-    103: {"name": "Charlie Davis", "major": "Physics", "courses": {"PHYS101", "PHYS102"}},
-}
-
-def display_student_details(student_db):
-    """Display student details from a dictionary"""
-    print("\nStudent Details:")
-    for sid, details in student_db.items():
-        print(f"ID: {sid} | Name: {details['name']} | Major: {details['major']} | Courses: {details['courses']}")
-
-display_student_details(student_dict)
-```
+In `data_processing.py`, edit the `display_students` function to loop through all students and print each student's
+details using the `format_student_data` function.
 
 #### Step 5: Updating Student Courses Using Set Operations
 
+In `set_operations.py`, edit the `unique_majors` function to return a set of unique student
+majors using set comprehension. For example, given a list of students like:
 ```python
-def add_course(student_db, student_id, new_course):
-    """Add a new course to a student's course set"""
-    if student_id in student_db:
-        student_db[student_id]["courses"].add(new_course)
-        print(f"\nAdded {new_course} to {student_db[student_id]['name']}'s courses.")
-    else:
-        print("\nStudent not found.")
-
-add_course(student_dict, 101, "CS201")
-
-# Display updated student data
-display_student_details(student_dict)
+[
+    (101, "Miles", "Mathematics"),
+    (102, "Laura", "Mathematics"),
+    (103, "Benji", "Physics"),
+    (104, "Natalia", "Physics"),
+    (105, "Nadia", "Mathematics"),
+]
 ```
+the `unique_majors` function should return (in no particular order):
+```python
+{"Mathematics", "Physics"}
+```
+
+#### Step 6: Create a Student List Generator by Major
+
+In `data_generator.py`, edit the `student_generator` function to return a generator expression
+for all students by major. Example of a generator expression:
+
+```python
+(item_to_return for item_in_iterable in iterable if condition)
+
+# more concrete example:
+number_list = [1,2,3,4,5,6]
+generator_expression = (n * 2 for n in number_list if n > 3)
+```
+
 
 ---
 
