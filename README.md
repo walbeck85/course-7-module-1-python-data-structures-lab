@@ -43,6 +43,16 @@ Run the following command to install dependencies:
 pipenv install
 ```
 
+Run the following to enter the virtual environment:
+```sh
+pipenv shell
+```
+
+To run the test suite, use:
+```sh
+pytest -x
+```
+
 ## Tasks
 
 ### Task 1: Define the Problem
