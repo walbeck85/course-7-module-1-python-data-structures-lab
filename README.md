@@ -2,7 +2,7 @@
 
 ## Learning Goals
 
-- Utilize **lists, tuples, dictionaries, and sets** to store and manage student records.
+- Utilize **lists, tuples, and sets** to store and manage student records.
 - Apply **list comprehensions** and **dictionary comprehensions** for efficient data filtering.
 - Use **generator expressions** to process large datasets efficiently.
 - Implement **set operations** for tracking unique student attributes.
@@ -12,7 +12,7 @@
 
 In this lab, you will build a **Student Data Management System** that allows users to store, filter, and process student records efficiently. The system will enable users to:
 
-- Store and retrieve student information using **lists, tuples, dictionaries, and sets**.
+- Store and retrieve student information using **lists, tuples, and sets**.
 - Filter student data dynamically using **list comprehensions** and **dictionary comprehensions**.
 - Process large student datasets efficiently using **generator expressions**.
 - Track unique student attributes (e.g., **majors, completed courses**) using **sets**.
@@ -59,8 +59,8 @@ pytest -x
 
 The goal of this lab is to build a **Student Data Management System** that allows users to store, retrieve, and process student records efficiently. The system must provide the following capabilities:
 
-- Manage student records using **lists, dictionaries, and sets**.
-- Filter student data dynamically using **list comprehensions** and **dictionary comprehensions**.
+- Manage student records using **lists, tuples, and sets**.
+- Filter student data dynamically using **list comprehensions** and **set comprehensions**.
 - Process large datasets efficiently using **generator expressions**.
 - Track unique student attributes (e.g., completed courses) using **sets**.
 
@@ -74,14 +74,12 @@ The **Student Data Management System** will be built using structured data handl
 
 - **Lists & Tuples**: Store student data in structured collections.
 - **List Comprehensions & Generator Expressions**: Process and filter student records efficiently.
-- **Dictionaries**: Store student attributes using key-value pairs for fast lookups.
 - **Sets**: Track unique student data attributes such as completed courses and enrolled majors.
 
 #### Design Breakdown:
 - **Student list storage** using **tuples** and **lists**.
 - **Filtering capabilities** using **list comprehensions**.
 - **Memory-efficient data handling** with **generator expressions**.
-- **Fast lookups and updates** using **dictionaries**.
 - **Tracking unique attributes** using **sets**.
 
 This structured approach ensures an **efficient, maintainable, and scalable** student data system.
