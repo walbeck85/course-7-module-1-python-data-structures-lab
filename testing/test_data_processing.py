@@ -1,4 +1,3 @@
-import pytest
 from lib.data_processing import format_student_data, display_students
 
 def test_format_student_data():

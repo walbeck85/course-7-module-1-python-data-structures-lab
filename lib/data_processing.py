@@ -7,14 +7,13 @@ def format_student_data(student):
     - Student ID
     - Student Name
     - Major
+    such as: "ID: 10 | Name: Louis Medina | Major: Computer Science"
     """
-    # TODO: Implement this function
     pass
 
 def display_students(student_list):
     """
-    Display all students in a formatted way.
+    Display all student records.
     Loop through the student_list and print each student using format_student_data().
     """
-    # TODO: Implement this function
     pass
