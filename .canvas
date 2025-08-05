@@ -1,9 +1,0 @@
----
-# Placeholder .canvas file
-# Course and lesson information will be updated when available
-
-:lessons:
-- :id: TBD
-  :course_id: TBD
-  :canvas_url: TBD
-  :type: assignment
