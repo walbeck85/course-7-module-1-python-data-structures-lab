@@ -1,8 +1,7 @@
-# This module contains operations related to sets.
+# lib/set_operations.py
 
-def unique_majors(student_list):
-    """
-    Return a set of unique student majors using set comprehension.
-    Extract the major field from each student record.
-    """
-    pass
+# This module contains operations related to sets.
+# Extract unique majors from student data.
+def unique_majors(students):
+    """Return a set of unique student majors using set comprehension."""
+    return {major for _, _, major in students}
